@@ -15,11 +15,9 @@ const musicPlayer = document.querySelector(".music-player");
 
 // updates dynamically the background gradient color
 function updateMusicPlayerBackground(songColor) {
-  // Ensure the color is valid and update the background gradient
   if (songColor) {
     musicPlayer.style.backgroundImage = `linear-gradient(180deg, ${songColor}, black)`;
   } else {
-    // Fallback if no color is provided
     musicPlayer.style.backgroundImage =
       "linear-gradient(180deg, #f806cc, black)";
   }
