@@ -1,0 +1,51 @@
+const songs = [
+  {
+    name: "Perfect",
+    file: "/songs/Perfect.mp3",
+    image: "/images/Perfect.jpg",
+    singer: "Ed Sheeran",
+    language: "English",
+  },
+  {
+    name: "Aluva Puzha",
+    file: "/songs/Aluva Puzha.mp3",
+    image: "/images/Aluva Puzha.jpg",
+    singer: "Vineeth Sreenivasan",
+    language: "Malayalam",
+  },
+  {
+    name: "Raja Raja Chozhan",
+    file: "/songs/Raja Raja Chozhan.mp3",
+    image: "/images/Raja Raja Chozhan.jpg",
+    singer: "Ilaiyaraaja",
+    language: "Tamil",
+  },
+  {
+    name: "Saans",
+    file: "/songs/Saans.mp3",
+    image: "/images/Saans.jpg",
+    singer: "Shreya Ghoshal, Mohit Chauhan",
+    language: "Hindi",
+  },
+  {
+    name: "Adiga Adiga",
+    file: "/songs/Adiga Adiga.mp3",
+    image: "/images/Adiga Adiga.jpg",
+    singer: "Sid Sriram",
+    language: "Telugu",
+  },
+  {
+    name: "Yakkai Thiri",
+    file: "/songs/Yakkai Thiri.mp3",
+    image: "/images/Yakkai Thiri.jpg",
+    singer: " A.R. Rahman, Sunitha Sarathy, Pop Shalini",
+    language: "Tamil",
+  },
+  {
+    name: "Matargashti",
+    file: "/songs/Matargashti.mp3",
+    image: "/images/Matargashti.jpg",
+    singer: " Mohit Chauhan",
+    language: "Hindi",
+  },
+];

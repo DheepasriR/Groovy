@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groove</title>
+
+    <!-- for bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- for font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- for external stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- for external javascript -->
+    <script src="songs.js" defer></script>
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header Content -->
+    <header>
+      <h1 class="text-center"><b>GROOVY</b></h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="container text-center">
+        <div class="row">
+          <!-- Music player -->
+          <div class="col-md-5 col-sm-12 music-player mt-4 mb-4 pb-5 mx-auto">
+            <div class="song-image-container mt-4 mb-3">
+              <h2 id="current-song-title" class="mb-0"></h2>
+              <p id="current-singer"></p>
+              <img
+                id="song-image"
+                src=""
+                alt="Current Song Image"
+                class="img-fluid"
+              />
+            </div>
+
+            <audio id="audio-player" style="display: none"></audio>
+
+            <!-- Custome slider -->
+            <div id="custom-slider-container">
+              <input
+                type="range"
+                id="custom-slider"
+                value="0"
+                min="0"
+                max="100"
+                step="1"
+              />
+            </div>
+
+            <div class="row justify-content-between mx-1">
+              <!-- Volume Control -->
+              <div class="volume-control">
+                <button id="volume-btn" class="btn">
+                  <i class="fas fa-volume-high"></i>
+                </button>
+                <input
+                  id="volume-slider"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="100"
+                  class="d-none"
+                />
+              </div>
+
+              <!-- Song Time Tracker -->
+              <div class="time-tracker mt-4">
+                <span id="current-time">0:00</span> /
+                <span id="total-duration">0:00</span>
+              </div>
+            </div>
+
+            <!-- Audio Control Buttons -->
+            <div class="controls mt-3">
+              <button id="shuffle-btn" class="btn" onclick="toggleShuffle()">
+                <i class="fas fa-random"></i>
+              </button>
+              <button id="prev-btn" class="btn" onclick="playPrevious()">
+                <i class="fas fa-backward-step"></i>
+              </button>
+              <button
+                id="play-pause-btn"
+                class="btn"
+                onclick="togglePlayPause()"
+              >
+                <i class="fas fa-play"></i>
+              </button>
+              <button id="next-btn" class="btn" onclick="playNext()">
+                <i class="fas fa-forward-step"></i>
+              </button>
+              <button id="repeat-btn" class="btn" onclick="toggleRepeat()">
+                <i class="fas fa-redo"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Songs list -->
+          <div
+            class="col-md-5 col-sm-12 songs-list text-left mt-4 mb-4 mx-auto"
+          >
+            <input
+              type="text"
+              id="search-bar"
+              class="form-control"
+              placeholder="Search for a song..."
+            />
+            <ul id="song-list" class="list-group">
+              <!-- generates list of songs -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Content -->
+    <footer class="text-center text-dark">
+      <p>
+        &copy; 2024 Groove Music Player by Dheepasri Ravichandran. All rights
+        reserved.
+      </p>
+    </footer>
+  </body>
+</html>
