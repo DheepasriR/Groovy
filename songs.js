@@ -5,6 +5,7 @@ const songs = [
     image: "/images/Perfect.jpg",
     singer: "Ed Sheeran",
     language: "English",
+    color: "blue",
   },
   {
     name: "Aluva Puzha",
@@ -12,6 +13,7 @@ const songs = [
     image: "/images/Aluva Puzha.jpg",
     singer: "Vineeth Sreenivasan",
     language: "Malayalam",
+    color: "red",
   },
   {
     name: "Raja Raja Chozhan",
@@ -19,6 +21,7 @@ const songs = [
     image: "/images/Raja Raja Chozhan.jpg",
     singer: "Ilaiyaraaja",
     language: "Tamil",
+    color: "yellow",
   },
   {
     name: "Saans",
@@ -26,6 +29,7 @@ const songs = [
     image: "/images/Saans.jpg",
     singer: "Shreya Ghoshal, Mohit Chauhan",
     language: "Hindi",
+    color: "goldenrod",
   },
   {
     name: "Adiga Adiga",
@@ -33,6 +37,7 @@ const songs = [
     image: "/images/Adiga Adiga.jpg",
     singer: "Sid Sriram",
     language: "Telugu",
+    color: "teal",
   },
   {
     name: "Yakkai Thiri",
@@ -40,6 +45,7 @@ const songs = [
     image: "/images/Yakkai Thiri.jpg",
     singer: " A.R. Rahman, Sunitha Sarathy, Pop Shalini",
     language: "Tamil",
+    color: "brown",
   },
   {
     name: "Matargashti",
@@ -47,5 +53,6 @@ const songs = [
     image: "/images/Matargashti.jpg",
     singer: " Mohit Chauhan",
     language: "Hindi",
+    color: "orange",
   },
 ];

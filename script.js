@@ -11,19 +11,34 @@ const initialSongs = [...songs];
 
 // ----------------------------------------------------------
 
+const musicPlayer = document.querySelector(".music-player");
+
+// updates dynamically the background gradient color
+function updateMusicPlayerBackground(songColor) {
+  // Ensure the color is valid and update the background gradient
+  if (songColor) {
+    musicPlayer.style.backgroundImage = `linear-gradient(180deg, ${songColor}, black)`;
+  } else {
+    // Fallback if no color is provided
+    musicPlayer.style.backgroundImage =
+      "linear-gradient(180deg, #f806cc, black)";
+  }
+}
+
+// ------------------------------------------------------------
+
 const audioPlayer = document.getElementById("audio-player");
 const songImage = document.getElementById("song-image");
 
 // displays the current song and its image in the music-player
 function loadSong(songIndex) {
-  audioPlayer.src = songs[songIndex].file;
-  document.getElementById("current-song-title").textContent =
-    songs[songIndex].name;
-  document.getElementById("current-singer").textContent =
-    songs[songIndex].singer;
-  songImage.src = songs[songIndex].image;
-  document.getElementById("current-song-title").textContent =
-    songs[songIndex].name;
+  const selectedSong = songs[songIndex];
+  audioPlayer.src = selectedSong.file;
+  document.getElementById("current-song-title").textContent = selectedSong.name;
+  document.getElementById("current-singer").textContent = selectedSong.singer;
+  songImage.src = selectedSong.image;
+
+  updateMusicPlayerBackground(selectedSong.color);
 }
 
 // ---------------------------------------------------------------
